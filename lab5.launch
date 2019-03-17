@@ -1,0 +1,7 @@
+<launch>
+	<rosparam param="goalx">4.5</rosparam>
+	<rosparam param="goaly">9.0</rosparam>
+	<node name="stage" pkg="stage_ros" type="stageros"
+	      args="$(find lab5)/world/lab5.world" />
+        <node name="astar" pkg="lab5" type="astar.py" />     
+</launch>
